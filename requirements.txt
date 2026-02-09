@@ -1,0 +1,6 @@
+notion-client==2.0.0
+google-cloud-secret-manager==2.16.0
+google-cloud-storage==2.14.0
+google-auth==2.27.0
+Flask==2.3.3
+gunicorn==21.2.0
