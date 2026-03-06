@@ -7,12 +7,12 @@ This repository provides a **functionally equivalent refactor**, preserving the 
 
 The purpose of this refactor is to **demonstrate the technical approach, design decisions, and integration patterns** used in the original system—without exposing private business logic, credentials, or data.
 
-⚠️ **Important note**  
+ **Important note**  
 This code is intended as a **technical reference and portfolio example**. It does not contain credentials, secrets, or confidential information.
 
 ---
 
-## 🧩 What does this service do?
+##  What does this service do?
 
 - Connects to a **Gmail inbox via IMAP**
 - Detects new incoming emails based on UID tracking
@@ -25,7 +25,7 @@ This code is intended as a **technical reference and portfolio example**. It doe
 
 ---
 
-## 📁 Project structure
+##  Project structure
 
 ```text
 .
@@ -39,7 +39,7 @@ This code is intended as a **technical reference and portfolio example**. It doe
 
 ---
 
-## 🔐 Secret management
+##  Secret management
 
 This project **does NOT include secrets in the codebase**.
 
@@ -57,7 +57,7 @@ The secret is expected to contain a JSON payload with at least:
 
 ---
 
-## 🌍 Environment variables
+##  Environment variables
 
 ### Required
 
@@ -81,7 +81,7 @@ GCS_BUCKET_NAME=<bucket-name>
 
 ---
 
-## ▶️ Run locally
+##  Run locally
 
 **Requirements:**
 - Python 3.10+
@@ -97,7 +97,7 @@ python main.py
 
 ---
 
-## 🐳 Run with Docker
+##  Run with Docker
 
 ```bash
 docker build -t mail-notion-automation .
@@ -108,7 +108,7 @@ docker run -p 8080:8080 \
 
 ---
 
-## ☁️ Recommended deployment
+##  Recommended deployment
 
 This service is designed to run on:
 
@@ -118,7 +118,7 @@ This service is designed to run on:
 
 ---
 
-## 🧪 DRY RUN mode
+##  DRY RUN mode
 
 To test the full workflow without writing to Notion or Google Cloud Storage:
 
@@ -130,13 +130,13 @@ All external operations will be simulated and only logs will be generated.
 
 ---
 
-## 📌 Disclaimer
+##  Disclaimer
 
 This repository is a **refactored technical example** created for demonstration and portfolio purposes.  
 It does not expose real production data, credentials, or confidential company information.
 
 ---
 
-## 📄 License
+##  License
 
 Free to use for educational and reference purposes.
